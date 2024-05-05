@@ -1,0 +1,112 @@
+.bg__header {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.logo {
+    width: 50%;
+}
+.contact {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.contact img {
+    margin-right: 15px;
+}
+.detail__contact {
+    margin-top: 15px;
+}
+.sdt span {
+    background: url(/src/public/image/phone.png) no-repeat 0 0;
+    display: inline-block;
+    padding: 2px 0 5px 30px;
+    font-weight: 400;
+    font-weight: bold;
+    font-size: 14px;
+}
+.address span {
+    background: url(/src/public/image/address.png)  no-repeat 0 0;
+    display: inline-block;
+    padding: 2px 0 5px 30px;
+    font-weight: 400;
+}
+/* menu */
+.menu__header {
+    background-color: #107ec7;
+    height: 50px;
+}
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.menu__list>li {
+    padding: 10px 10px;
+}
+.menu__list li a {
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.menu__list li a i {
+    font-size: 10px;
+}
+/* SUB */
+.sub__menu {
+    margin-top: 10px;
+    padding: 10px 5px 5px 5px;
+    position: absolute;
+    width: 560px;
+    background-color: #107ec7;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+.sub__menu li a {
+    position: relative;
+}
+.sub__menu li img {
+    opacity: 0.7;
+    width: 100%;
+    transition: .1s;
+}
+.sub__menu li a span {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 0px 1px 10px rgba(0,0,0,0.9);
+}
+.list__des {
+    width: 220px;
+}
+.list__des li {
+    padding: 10px 5px;
+}
+.list__des li a {
+    padding: 10px 5px;
+    text-transform: uppercase;
+    transition: .2s;
+    transform: translateX(-1px);
+}
+.list__des li a:hover {
+    color: #f45600;
+}
+.item__menu:hover .sub__menu {
+    opacity: 1;
+    visibility: inherit;
+}
+.sub__menu li:hover .red__text {
+    color: #f45600;
+}
+.sub__menu li:hover .img__sub-menu {
+    opacity: 1;
+    transform: translateY(-1px);
+}

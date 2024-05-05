@@ -1,0 +1,39 @@
+#footer {
+    background-color: #107ec7;
+    padding: 20px 0 10px 0;
+}
+.footer__head.row {
+    margin-bottom: 80px;
+}
+.title__item-ft, .title__item-ft--company {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+    color: #fff;
+}
+.title__item-ft{
+    margin-bottom: 20px;
+}
+.item__list-ft, .item__list-ft__social {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    margin: 2px 0;
+    padding: 2px 0;
+    cursor: pointer;
+}
+.item__list-ft__social{
+    font-size: 25px;
+    margin-right: 5px;
+}
+.item__list-ft:hover{
+    color: #fff;
+    padding-left: 3px;
+}
+.item__list-ft:hover {
+    color: #f45600;
+    padding-left: 3px;
+}
+.footer__last.row {
+    padding-bottom: 20px;
+}

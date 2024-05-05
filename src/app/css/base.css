@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+ul,li, a {
+    text-decoration: none;
+    list-style:none;
+}
+:root {
+    --title-color: #107ec7;
+    --description: #666666;
+    --price-new: #ff5722;
+    --bg-buttonBook: #fb7220;
+}
+.red__text {
+    color: #f45600;
+}
