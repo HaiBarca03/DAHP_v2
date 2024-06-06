@@ -1,0 +1,377 @@
+/* why book */
+.why__book-tour {
+    background-color: #fff;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
+.contents__item {
+    display: flex;
+}
+
+.right__content {
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.right__content h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* banner */
+.img__yacht {
+    width: 100%;
+    height: 100%;
+}
+
+/* container */
+.container {
+    background-color: #f1f1f1;
+}
+
+/* title */
+.title__hotel {
+    padding: 20px 0;
+}
+
+.txt__title {
+    font-size: 30px;
+    color: #555555;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.txt__title::after {
+    content: "";
+    max-width: 170px;
+    border-bottom: 2px solid #004d94;
+    width: 100%;
+    margin: 15px auto 0 auto;
+    display: block;
+}
+
+.des__title {
+    font-size: 15px;
+    text-align: center;
+    color: #555555;
+}
+
+/* item hotel */
+.item__hotel {
+    border-radius: 2px;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.13);
+}
+
+.list__hotel>.col.l-4 {
+    margin: 10px 0;
+}
+
+.img__hotel {
+    width: 100%;
+    transition: all .3s linear;
+}
+
+.f-img__hotel {
+    position: relative;
+    overflow: hidden;
+    max-height: 205px;
+}
+
+.f-img__hotel:hover .img__hotel {
+    transform: scale(1.1);
+}
+
+.txt__img-hotel {
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+    position: absolute;
+    font-weight: bold;
+    font-size: 17px;
+    color: #fff;
+    height: 30px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.txt__img-hotel>p {
+    padding: 0 10px;
+}
+
+.txt__img-hotel::after {
+    content: "";
+}
+
+.star__evaluate>i {
+    color: orange;
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+.local__hotel {
+    font-size: 14px;
+    color: #666666;
+    max-width: 95%;
+}
+
+.local__hotel>i {
+    padding-right: 5px;
+}
+
+/* pagianation */
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.pagination>li>button {
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.active {
+    color: #fff !important;
+    background-color: #337ab7 !important;
+    border-color: #337ab7;
+}
+
+
+
+/* slider foot */
+.item__slider img {
+    width: 100%;
+}
+
+/* contact */
+.contact__ad {
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.frame__contact {
+    padding-left: calc((100% - 1200px) / 2);
+    padding-right: calc((100% - 1200px) / 2);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.text__contact-foot {
+    display: flex;
+}
+
+.img__contact-foot {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.text__content-ct {
+    width: 700px;
+    padding-left: 20px;
+}
+
+.head__text-ct {
+    font-size: 16px;
+    font-weight: bold;
+    color: #666665;
+}
+
+.head__text-ct b {
+    color: #fb7220 !important;
+}
+
+.main__contact {
+    color: #333333;
+    font-size: 14px;
+}
+
+.input__help {
+    display: flex;
+    align-items: center;
+}
+
+.input__help button {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    background: #FB7220;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.35s;
+    border: none;
+    border-radius: 3px;
+}
+
+.input__help button i {
+    padding-right: 10px;
+}
+
+/* box chat */
+.fix__img {
+    visibility: inherit;
+    opacity: 1;
+}
+
+.active__fix-img {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.fix__img img {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+}
+
+.chat__box {
+    width: 350px;
+    height: 500px;
+    background-color: #004d94;
+    border-radius: 15px !important;
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.13) !important;
+    position: fixed;
+    right: 15px;
+    bottom: 80px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 999;
+}
+
+.active__chat-box {
+    visibility: visible;
+    opacity: 1;
+}
+
+.head__chat-box {
+    padding: 10px 10px;
+    background-color: #05809b;
+    border-top-right-radius: 15px !important;
+    border-top-left-radius: 15px !important;
+    position: relative;
+}
+
+.content__head-chat {
+    display: flex;
+}
+
+.logo__chat {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+i.fa-solid.fa-x {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    padding: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.text__chat {
+    color: #fff;
+}
+
+.content__chat-box {
+    height: 400px;
+}
+
+.content__chat-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    color: #05809b;
+    background-color: #fff;
+}
+
+.ct__chat-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+i.fa-regular.fa-comments {
+    font-size: 130px;
+    padding-bottom: 30px;
+}
+
+.subMit__chat {
+    width: 100% !important;
+    border-top: 1px solid #e3e3e3 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    padding: 15px !important;
+    border-top: 1px #555 solid;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: #fff;
+}
+
+.input__chat {
+    width: 90%;
+}
+
+.icon__subMit {
+    width: 10%;
+    color: #05809b;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ghim {
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.message-input--input {
+    word-wrap: break-word !important;
+    resize: none !important;
+    flex: 1 !important;
+    align-self: center !important;
+    margin-right: 7.5px !important;
+    border: none;
+}
+
+textarea:focus {
+    outline: 0;
+}
+
+/* mobile */
+.menu__m-t {
+    display: none;
+}
+
+/* page 2 */
+.list__ht2 {
+    display: none !important;
+}
+
+.openPage {
+    display: flex !important;
+}
+
+.closePage {
+    display: none !important;
+}

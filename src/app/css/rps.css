@@ -1,0 +1,201 @@
+/* mobile , tablet */
+@media (max-width: 1023px){
+    /* menu */
+    body {
+        position: relative;
+    }
+    body::after {
+        display: none;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        content: "";
+        position: absolute;
+        background: rgba(22 , 42, 69, 0.8) /* Gradient mờ dần */
+    } 
+    body.submitted::after {
+        display: block; /* Ẩn pseudo-element sau khi form đã được submit */
+    }
+    .menu__header {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .logo-m-t {
+        display: none;
+    }
+    .menu__m-t__close {
+        display: none;
+    }
+    .menu__m-t__open {
+        display: block !important;
+    }
+    .menu__list{
+        display: none;
+    }
+    .menu__m-t {
+        display: none;
+    }
+    .bar__menu>i {
+        font-size: 25px;
+        padding: 10px 15px;
+        color: #fff;
+    }
+    ul.menu__list-m-t {
+        transform: translateX(-50%);
+        left: 50%;
+        top: 60px;
+        width: auto;
+        position: absolute;
+        z-index: 1100;
+    }
+    .close__btn {
+        left: 160%;
+        top: 0px;
+        position: absolute;
+        margin-left: 24px;
+        padding: 20px 0;
+    }
+    .close__btn>i {
+        padding: 10px;
+        font-size: 18px;
+    }
+    li.item__menu-m-t {
+        margin: 10px 0;
+        text-align: center;
+        transition: all .3s ease;
+    }
+    .item__menu-m-t>a {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .sub__menu-m-t {
+        display: none;
+        background: none;
+    }
+    .red__text {
+        color: #fff;
+    }
+    .sub__menu-m-t>li {
+        font-weight: bold;
+        font-size: 20px;
+        padding: 5px 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .item__menu-m-t:hover .sub__menu-m-t {
+       display: block;
+    }
+    .frame__search {
+        display: none;
+    }
+    .check__in {
+        display: none;
+    }
+    .bg__img {
+        background: none;
+        height: auto;
+    }
+    .title__info-tour{
+        padding: 20px 40px;
+    }
+    .frame__contact {
+        justify-content: center !important;
+    }
+    .input__help {
+        display: none;
+    }
+    .text__content-ct {
+        width: auto;
+    }
+    .fix__img img {
+        width: 20%
+    }
+    .frame__item-sale>figure {
+        max-height: 168px;
+    }
+    /* dt yacht */
+    .img__right-dt {
+        display: none;
+    }
+    .title__table{
+        display: none;
+    }
+    .list__select-l--dt>.col.l-8.m-12.c-12 {
+        display: flex;
+        justify-content: center;
+    }
+    .item__l-dt {
+        border: none;
+    }
+    .price__ct-l-dt {
+        padding: 20px 0;
+        text-align: center;
+    }
+    .item__charts>label {
+        display: none;
+    }
+    .list__r-dt {
+        display: none;
+    }
+    .des__ovv {
+        width: 100%;
+    }
+    .item__more-tour>.col.l-8 {
+        border: none;
+    }
+    .row_2e>.col.l-6.m-12.c-12 {
+        padding: 5px 0;
+    }
+    /* hotel */
+    .f-img__hotel {
+        max-height: 385px;
+    }
+    .f-img__hotel>img {
+        object-fit: cover;
+    }
+}
+/* mobile */
+@media (max-width: 739px){
+    .container {
+        padding: 20px;
+    }
+    .item__yacht {
+        padding: 20px;
+    }
+    .close__btn {
+        left: 140%;
+    }
+    .bg__header {
+        display: none;
+    }
+    .head__m-t {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .logo-m-t {
+        display: block;
+    }
+    .logo-m-t>img{
+        width: 100%;
+        height: 45px;
+    }
+    .page__mobile {
+        padding: 20px;
+    }
+    .frame__item-sale>figure {
+        max-height: 320px;
+    }
+    .list__item-ft>p>iframe {
+        width: 100%;
+    }
+    #footer {
+        padding: 10px 20px;
+    }
+    /* hotel */
+}

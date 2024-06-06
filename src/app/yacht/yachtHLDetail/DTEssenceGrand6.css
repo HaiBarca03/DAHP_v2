@@ -1,28 +1,56 @@
+body {
+    position: relative;
+}
+
+body::after {
+    display: none;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1100;
+    content: "";
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    /* Gradient mờ dần */
+}
+
+body.submitted::after {
+    display: block;
+    /* Ẩn pseudo-element sau khi form đã được submit */
+}
+
 .img__yacht {
     width: 100%;
 }
+
 .head__dtYacht {
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
 }
+
 .title__lh {
     font-size: 26px;
     color: var(--title-color);
 }
+
 .evaluate__lh {
     display: flex;
     color: orange;
 }
+
 .price__rh {
     display: flex;
 }
+
 .evaluate__lh {
     margin: 5px 0;
 }
+
 .star__lh {
     padding-right: 10px;
 }
+
 .bt__lh {
     padding: 3px 10px;
     background-color: orange;
@@ -33,18 +61,22 @@
     border-radius: 2px;
     text-align: center;
 }
+
 .local__tour {
     color: #666666;
     font-size: 15px;
 }
+
 .right__head {
     display: flex;
     flex-direction: column;
     float: right;
 }
+
 .bt__head {
     margin-bottom: 5px;
 }
+
 .bt-rh {
     width: 100%;
     padding: 8px 10px;
@@ -55,76 +87,95 @@
     border: none;
     border-radius: 3px;
 }
+
 .price__old-rh {
     color: #999999;
     padding-right: 10px;
 }
+
 .price__old-rh>strong {
     text-decoration: line-through;
 }
+
 .price__new-rh {
     color: #fb7220;
     font-size: 18px;
     font-weight: bold;
 }
+
 .mid__dtYacht {
     border-top: #999999 1px dotted;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .left__mid {
     display: flex;
     margin: 10px 0;
     color: #666666;
     font-size: 15px;
 }
+
 .fa-bookmark {
     padding-right: 5px;
 }
+
 .style__lm {
     margin-right: 20px;
 }
+
 .start__yacht-lm {
     margin-right: 20px;
 }
+
 .hefp__rm {
     color: #999999;
 }
+
 .hefp__rm>a {
     color: #fb7220;
     font-size: 16px;
     font-weight: bold;
 }
+
 .img__dtYacht {
     margin: 20px 0;
 }
+
 .img__right-dt {
     display: flex;
 }
+
 .item__img-dt {
     width: 100%;
     height: 100%;
     transition: all .5s ease;
 }
+
 .item__img-dt:hover {
     transform: scale(1.1);
 }
+
 .list__img-dt>a {
     padding: 0 !important;
 
 }
+
 .list__img-dt>a>.col.l-7 {
     padding: 0 !important;
 }
+
 a.col.l-12,
 a.col.l-6 {
     padding: 0 !important;
 }
+
 .col.l-5.row.sm-gutter.img__right-dt {
     padding-right: 0;
     padding-left: 10px;
 }
+
 .list__img-dt a {
     overflow: hidden;
 }
@@ -134,25 +185,31 @@ a.col.l-6 {
     border-bottom: #999999 1px dotted;
     padding: 10px 0;
 }
+
 .right__dtYacht {
     margin-bottom: 20px;
 }
+
 .list__r-dt {
     border: #999999 1px dotted;
 }
+
 .title__l-dt {
     font-size: 22px;
     color: #555555;
     margin-bottom: 20px;
 }
+
 .title__l-dt>i {
     color: #fb7220;
 }
+
 .des__l-dt {
     color: #333333;
     font-size: 14px;
     line-height: 35px;
 }
+
 .title__right-dt {
     font-size: 16px;
     font-weight: bold;
@@ -162,18 +219,22 @@ a.col.l-6 {
     text-transform: uppercase;
     text-align: center;
 }
+
 .item__r-dt {
     padding: 10px;
     margin: 10px 0;
 }
+
 .title__item-r-dt>a>h2 {
     font-size: 16px;
     text-align: center;
     padding-bottom: 5px;
 }
-.title__item-r-dt{
+
+.title__item-r-dt {
     position: relative;
 }
+
 .price__now-r--dt>button {
     position: absolute;
     bottom: 5px;
@@ -192,26 +253,33 @@ a.col.l-6 {
     padding: 20px;
     margin-top: 5px;
 }
+
 .title__table {
     margin-bottom: 30px;
 }
+
 .title__table h2 {
     font-size: 16px;
     color: red;
 }
+
 .list__select-l--dt {
     margin-bottom: 40px;
 }
+
 .item__l-dt {
     display: flex;
     border-right: #999999 1px dotted;
 }
+
 .item__l-dt>img {
     padding-right: 20px;
 }
+
 .title__ct {
     color: #002d51;
 }
+
 .ct__l-dt>button {
     font-size: 10px;
     padding: 5px;
@@ -220,26 +288,32 @@ a.col.l-6 {
     border: none;
     border-radius: 2px;
 }
+
 .ct__l-dt>p {
     font-size: 12px;
     color: #666666;
     margin: 7px 0;
 }
+
 .ct__l-dt>p>i {
     padding-right: 5px;
 }
-.price__ct-l-dt>span{
+
+.price__ct-l-dt>span {
     color: #666666;
 }
+
 .price__ct-l-dt>span>strong {
     color: #fb7220;
     font-size: 18px;
 }
+
 .link__more-l--dt {
     padding: 10px;
     font-size: 13px;
     color: #666666;
 }
+
 .link__more-l--dt:hover {
     color: #004d94;
 }
@@ -256,53 +330,71 @@ a.col.l-6 {
     color: #fb7220;
     font-weight: bold;
 }
+
 .register {
-    width: 127px;
+    cursor: pointer;
+    width: 130px;
     padding: 10px 10px;
     color: #fb7220;
     font-weight: bold;
     font-size: 15px;
-    border:#fb7220 2px solid;
+    border: #fb7220 2px solid;
 }
+
 .book__now-here {
+    cursor: pointer;
     width: 125px;
     padding: 10px 10px;
     color: #fff;
     background-color: #fb7220;
     font-weight: bold;
     font-size: 15px;
-    border:#fb7220 2px solid;
+    border: #fb7220 2px solid;
 }
+
+.register:hover,
+.book__now-here:hover {
+    opacity: 0.8;
+}
+
 /* ovv */
 .over__views-yacht {
     margin: 40px 0;
 }
+
 .list__over {
     display: flex;
     border-bottom: #999999 1px dotted;
 }
+
 .item__over-view {
+    cursor: pointer;
     color: #555555;
     font-size: 18px;
     margin-right: 50px;
     padding: 15px 20px;
 }
+
 .item__over-view>i {
     padding-right: 5px;
 }
+
 .active__ovv {
-    color: #fb7220;
-    border-bottom: #fb7220 3px solid;
+    color: #fb7220 !important;
+    border-bottom: #fb7220 3px solid !important;
 }
+
 .des__ovv {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 20px;
 }
+
 .des__ovv>span {
     margin: 10px 0;
 }
+
 .blue__color {
     color: #000080 !important;
 }
@@ -310,8 +402,12 @@ a.col.l-6 {
 .table__dtYacht {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
-table, th, td {
+
+table,
+th,
+td {
     border: 1px solid black;
     border-collapse: collapse;
     font-size: 15px;
@@ -319,10 +415,12 @@ table, th, td {
     padding: 2px 0;
     background-color: rgb(217, 217, 217);
 }
+
 th {
     width: 150px;
     padding: 5px 10px;
 }
+
 td {
     width: 100px;
     padding: 5px 0;
@@ -330,89 +428,278 @@ td {
     font-weight: 500;
     opacity: 0.6;
 }
+
 .table__head>th {
     background-color: #8db3e2;
 }
+
 .title__tb-l {
     padding: 5px 10px;
 }
+
 .des__table {
     text-align: center;
     padding: 5px 0;
     color: #fb7220;
     font-weight: bold;
 }
+
 .item__note.red__text {
     border-bottom: #999999 1px dotted;
 }
+
 .item__note {
     margin: 20px 0;
     padding-bottom: 20px;
     border-bottom: #999999 1ps dotted;
 }
+
 .note__dtYacht>.item__note>p {
     color: #000;
     font-size: 14px;
     /* font-weight: 500; */
     line-height: 20px;
 }
+
 p.title__note-dt {
     color: #000080 !important;
     font-size: 15px !important;
     font-weight: 500;
 }
+
 .red__text {
     color: #fb7220;
 }
+
 .blue__text {
     color: #000080;
     font-weight: 500;
+}
+
+/* book now js */
+/* .item__note {
+    display: none;
+}
+.des__ovv {
+    display: none;
+}
+.table__dtYacht {
+    display: none;
+} */
+.classNone {
+    display: none;
+}
+
+.opFrmBook {
+    display: block !important;
+}
+
+#form__book {
+    display: none;
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.frm__book {
+    padding: 20px 0;
+}
+
+p.title__frm-book {
+    font-size: 23px;
+    font-weight: bold;
+    color: #004d94;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border-bottom: 1px dotted #dedede;
+}
+
+.form__dt {
+    padding: 20px 0;
+}
+
+.row_2e {
+    display: flex;
+    justify-content: space-around;
+}
+
+.row_e1,
+.row_2e {
+    padding: 5px 0;
+}
+
+.booking_d select {
+    background-color: #BEBEBE;
+    width: 15%;
+    float: left;
+    padding: 4px 0;
+    border: 1px solid #dedede;
+}
+
+.booking_d select:focus {
+    outline: none;
+}
+
+input.item__ip {
+    width: 85%;
+    padding: 5px;
+    border: 1px solid #dedede;
+}
+
+.item__ip2 {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #dedede;
+}
+
+textarea.item__ip2 {
+    min-height: 120px;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+p.name__yacht {
+    color: #000;
+    text-align: start;
+}
+
+.left__item,
+.left__item-2,
+.right__item,
+.right__item-2 {
+    font-size: 14px;
+    color: #004d94;
+    text-align: end;
+    line-height: 28px;
+}
+
+p.note__frm {
+    color: #666666;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 90px;
+}
+
+.book__btn-frm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button.btn__frm {
+    font-weight: bold;
+    font-size: 25px;
+    width: 300px;
+    height: 50px;
+    background-color: #e79800;
+    color: #fff;
+    border: 1px solid #e79800;
+}
+
+button.btn__frm>span {
+    text-align: center;
+}
+
+button.btn__frm:hover {
+    background-color: #ebb44e;
+    color: #fff;
+    border: none;
+}
+
+/* confirm */
+#confirmFormm {
+    display: none;
+}
+
+.confirmForm {
+    z-index: 1101;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 200px;
+    background: #4caf50;
+    width: 400px;
+    padding: 20px;
+}
+
+.confirmForm>h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.confirmForm>p {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.confirmForm>i {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
 }
 
 /* cmt */
 .comment>.col.l-2:first-child {
     border-right: #999999 1px dotted;
 }
+
 .cmt {
     font-size: 30px;
     text-align: center;
     padding-left: 10px;
     margin-bottom: 10px;
 }
+
 .starPstar {
     font-size: 30px;
     color: #fb7220;
     font-weight: bold;
     text-align: center;
 }
+
 .star__cmt {
     color: #999999;
     font-size: 12px;
     display: flex;
     justify-content: center;
 }
+
 .star__cmt>i {
     padding: 2px;
 }
+
 .item__charts {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
+
 .item__charts>label>i {
     font-size: 13px;
 }
+
 .comment>.col.l-2:last-child {
     border-left: #999999 1px dotted;
 }
+
 .feedback__cmt {
     padding: 10px;
 }
+
 .feedback__cmt>p {
     text-align: center;
     font-size: 14px;
     margin-bottom: 10px;
 }
+
 .send__feedback {
     width: 100%;
     padding: 5px 10px;
@@ -422,6 +709,7 @@ p.title__note-dt {
     border: none;
     border-radius: 3px;
 }
+
 /* progress */
 
 
@@ -438,7 +726,7 @@ p.title__note-dt {
 
     background-color: #fb7220;
     border-radius: 10px;
-  }
+}
 
 .progress-container {
     width: 70%;
@@ -446,7 +734,7 @@ p.title__note-dt {
     border-radius: 10px;
     margin: 0 10px;
 }
-  
+
 .progress-bar {
     width: 0%;
     height: 15px;
@@ -460,33 +748,40 @@ p.title__note-dt {
 .user__cmt {
     margin: 20px 0;
 }
+
 .item__user-cmt {
     margin: 40px 0;
 }
+
 .name__user {
     font-size: 16px;
     font-weight: bold;
     font-style: italic;
     color: #223771;
 }
+
 .day__cmt {
     margin-left: 5px;
     color: #999999;
     font-size: 14px;
 }
+
 .frame__cmt {
     margin: 5px 0;
 }
+
 .star__user--cmt {
     color: #e79800;
     font-size: 12px;
     margin: 5px 0;
 }
+
 .content__cmt {
     font-size: 14px;
     color: #333333;
     font-weight: 500;
 }
+
 .more__view-cmt {
     font-size: 14px;
     color: blueviolet;
@@ -496,11 +791,13 @@ p.title__note-dt {
 .foot__cnt-dtYacht {
     margin: 30px 0;
 }
+
 .button__f-dt {
     display: flex;
     justify-content: center;
     margin: 20px 0;
 }
+
 .button__f-dt>button {
     font-size: 15px;
     font-weight: bold;
@@ -513,19 +810,23 @@ p.title__note-dt {
     border-radius: 2px;
     cursor: pointer;
 }
+
 .button__f-dt>button:hover {
     opacity: 0.9;
     cursor: pointer;
 }
+
 .social__f-dt {
     display: flex;
     justify-content: center;
 }
+
 .social__f-dt>a>i {
     font-size: 30px;
     margin: 0 10px;
     color: #999999;
 }
+
 .social__f-dt>a>i:hover {
     color: #e79800;
 }
@@ -535,6 +836,7 @@ p.title__note-dt {
     margin: 20px 0;
     border-radius: 5px;
 }
+
 .banner__title>p {
     margin: 20px 120px;
     color: red;
@@ -549,25 +851,30 @@ p.title__note-dt {
     background-color: #fff;
     border-radius: 5px;
 }
+
 .item__more-tour>.col.l-8>a {
     font-size: 20px;
     font-weight: bold;
 }
+
 .item__more-tour>.col.l-8 {
     padding-right: 50px;
     padding-left: 30px;
     border-left: #999999 1px dotted;
 }
+
 .add__more-tour {
     margin: 10px 0;
     font-size: 15px;
     color: #666666;
 }
+
 .day__more {
     font-size: 20px;
     color: #666666;
     text-align: center;
 }
+
 .more__tour>h1 {
     color: #555555;
     font-size: 22px;
@@ -575,23 +882,28 @@ p.title__note-dt {
     padding-bottom: 20px;
     border-bottom: #ddd 1px dotted;
 }
+
 .more__tour>h1>i {
     color: red;
     font-size: 24px;
 }
+
 /* maybe */
 .title__maybe-like {
     color: #555555;
     font-size: 22px;
     margin: 20px 0;
 }
-.pagination_wrapper{
+
+.pagination_wrapper {
     margin: 20px 0;
 }
+
 .pagination_wrapper>ul {
     display: flex;
     justify-content: center;
 }
+
 .item__pagi {
     color: #004d94;
     padding: 5px;
@@ -599,9 +911,11 @@ p.title__note-dt {
     border: #004d94 1px solid;
     background-color: #fff;
 }
+
 .item__pagi>a {
     padding: 5px 10px;
 }
+
 .item__pagi:hover {
     background-color: #ddd;
 }
