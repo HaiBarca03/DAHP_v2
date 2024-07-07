@@ -75,6 +75,10 @@ form.cnt__frm,
     font-size: 14px;
 }
 
+.form-field>input:focus,
+.form-field>input:active {
+    background-color: #f1f1f1;
+}
 .send__cmt {
     margin-top: 20px;
     width: 100%;

@@ -6,7 +6,7 @@ let dots = document.querySelectorAll('.slider .dots li');
 
 let lengthItems = items.length - 1;
 let active = 0;
-next.onclick = function () {
+next.onclick = function(){
     active = active + 1 <= lengthItems ? active + 1 : 0;
     reloadSlider();
 }
@@ -63,3 +63,8 @@ function closeX() {
     element.classList.remove('menu__m-t__open')
     document.body.classList.remove("submitted");
 }
+
+// direct
+document.getElementById("navigateButton").onclick = function() {
+    window.location.href = "/src/app/contact/contact.html";
+};
